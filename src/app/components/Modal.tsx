@@ -1,7 +1,11 @@
 "use client";
+import Image from "next/image";
+import { Button, Carousel } from "@material-tailwind/react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 export default function Quote() {
+  const router = useRouter();
   return (
     <>
       <div
@@ -21,6 +25,7 @@ export default function Quote() {
             className="hidden sm:inline-block sm:align-middle sm:h-screen"
             aria-hidden="true"
           >
+            &#8203;
           </span>
           <div className="inline-block align-bottom bg-white rounded-lg px-4 pt-5 pb-4 text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full sm:p-6">
             <div className="sm:flex sm:items-start">
@@ -29,7 +34,7 @@ export default function Quote() {
                   className="text-lg leading-6 font-medium text-gray-900"
                   id="modal-title"
                 >
-                  Quotes 
+                  John A Pissaro 
                 </h3>
                 <div className="mt-2">
                   <p className="text-sm text-gray-500">
@@ -130,7 +135,7 @@ export default function Quote() {
                     passengers that were on board at one time or another were
                     there for a distinct purpose.
 
-                    Enjoy the ride.” ― JohnA Passaro
+                    Enjoy the ride.” 
                   </p>
                 </div>
               </div>
@@ -139,9 +144,9 @@ export default function Quote() {
               <Link
                 href="/"
                 type="button"
-                className="mb-16 w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-blue-600 text-base font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 sm:ml-3 sm:w-auto sm:text-sm z-20"
+                className="mb-12 w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-blue-600 text-base font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 sm:ml-3 sm:w-auto sm:text-sm"
               >
-                Cheers to the Ride!
+                Cheers to the Ride
               </Link>
             </div>
           </div>
