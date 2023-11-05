@@ -1,11 +1,7 @@
 "use client";
-import Image from "next/image";
-import { Button, Carousel } from "@material-tailwind/react";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
 
 export default function Quote() {
-  const router = useRouter();
   return (
     <>
       <div
