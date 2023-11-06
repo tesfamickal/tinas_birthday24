@@ -84,7 +84,7 @@ export default function Home({ searchParams }: Props) {
         </Button>
 
         <Button size="lg" variant="gradient" className="m-6">
-          <Link href="/?dialog=true">Redeem Voucher</Link>
+          <Link href="/?dialog=true">Redeem Ticket</Link>
         </Button>
         {showModal && <Modal />}
         {showVoucher && <Voucher />}
